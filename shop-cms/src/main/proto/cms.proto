@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.cms";
+option java_outer_classname = "CmsProto";
+
+service CmsService {
+    rpc CreateArticle (Article) returns (ArticleId);
+    rpc GetArticle (ArticleId) returns (Article);
+    rpc UpdateArticle (Article) returns (Empty);
+    rpc DeleteArticle (ArticleId) returns (Empty);
+    rpc ListArticles (Empty) returns (ArticleList);
+}
+
+message Article {
+    string id = 1;
+    string title = 2;
+    string content = 3;
+}
+
+message ArticleId {
+    string id = 1;
+}
+
+message ArticleList {
+    repeated Article Articles = 1;
+}
+
+message Empty {}
