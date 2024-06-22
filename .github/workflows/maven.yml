@@ -1,0 +1,29 @@
+name: Java CI with Maven
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+
+    # Build the first project in shop-api directory, skipping tests
+    - name: Build API with Maven
+      run: mvn -B package -DskipTests --file shop-api/pom.xml
+
+    # Build the second project in shop-cms directory, skipping tests
+    - name: Build CMS with Maven
+      run: mvn -B package -DskipTests --file shop-cms/pom.xml
