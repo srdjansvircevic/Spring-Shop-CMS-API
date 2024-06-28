@@ -1,4 +1,4 @@
 .DS_Store
 target/*
-shop-cms/target/*
-
+shop-cms/target/**/*
+shop-api/target/**/*
