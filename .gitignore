@@ -2,3 +2,5 @@
 target/*
 shop-cms/target/*
 
+shop-cms/target/classes/co/decem/mongo/MongoApplication.class
+shop-cms/target/test-classes/co/decem/mongo/MongoApplicationTests.class
