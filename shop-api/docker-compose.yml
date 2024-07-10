@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - appdb
+
+  appdb:
+    image: "postgres:15"
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=spring
+      - POSTGRES_PASSWORD=spring
+      - POSTGRES_DB=spring_shop2
+    volumes:
+      - ./appdb-data:/var/lib/postgresql/data
