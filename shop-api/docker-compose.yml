@@ -7,27 +7,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
-    # environment:
-    #   # Database configuration
-    #   - APP_DB_HOSTNAME=appdb
-    #   - APP_DB_USERNAME=spring
-    #   - APP_DB_PASSWORD=spring
-    #   - APP_DB_PORT=5432
-      
-    #   # Elasticsearch configuration
-    #   - ELASTICSEARCH_HOST=localhost
-    #   - ELASTICSEARCH_PORT=9200
-    #   - ELASTICSEARCH_SCHEME=http
-    #   - ELASTICSEARCH_USERNAME=elastic
-    #   - ELASTICSEARCH_PASSWORD=XH+Wn7ukSGKM+BfVfg3c
-      
-    #   # JWT configuration
-    #   - JWT_TOKEN_VALIDITY=18000
-    #   - JWT_SIGNING_KEY=signingkeytralalalasdfasdfewrgtrhgfshfdgajwherawehfksadasdgcvbnldsdfadsf
-    #   - JWT_AUTHORITIES_KEY=roles
-    #   - JWT_TOKEN_PREFIX=Bearer
-    #   - JWT_HEADER_STRING=Authorization
-
     depends_on:
       - appdb
 
