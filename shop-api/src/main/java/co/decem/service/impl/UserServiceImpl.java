@@ -81,10 +81,11 @@ public class UserServiceImpl implements UserDetailsService, UserService {
         roleSet.add(role);
 
         // If email domain is admin.edu, add ADMIN role
-        if(nUser.getEmail().split("@")[1].equals("admin.edu")){
+        //nUser.getEmail().split("@")[1].equals("admin.edu");
+            
             role = roleService.findByName("ADMIN");
             roleSet.add(role);
-        }
+        
 
         nUser.setRoles(roleSet);
         userDao.save(nUser);
