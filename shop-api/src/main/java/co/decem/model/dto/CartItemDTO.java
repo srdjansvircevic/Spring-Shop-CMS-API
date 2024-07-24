@@ -1,5 +1,7 @@
-package co.decem.model;
+package co.decem.model.dto;
 
+import co.decem.model.Cart;
+import co.decem.model.Product;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

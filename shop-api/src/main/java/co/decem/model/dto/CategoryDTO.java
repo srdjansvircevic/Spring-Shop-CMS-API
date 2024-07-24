@@ -1,7 +1,9 @@
-package co.decem.model;
+package co.decem.model.dto;
 
 import java.util.List;
 
+import co.decem.model.Filter;
+import co.decem.model.Product;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,5 +16,6 @@ public class CategoryDTO {
     private Long id;
     private String name;
     private List<Product> products;
+    private List<Filter> filters;
     
 }

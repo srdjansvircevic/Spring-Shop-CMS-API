@@ -4,7 +4,7 @@ package co.decem.service;
 import java.util.List;
 
 import co.decem.model.Cart;
-import co.decem.model.CartDTO;
+import co.decem.model.dto.CartDTO;
 
 
 

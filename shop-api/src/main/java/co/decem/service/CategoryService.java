@@ -7,5 +7,6 @@ import co.decem.model.Category;
 public interface CategoryService {
 
     List<Category> getAll();
+    Category getCategoryById(Long id);
     
 }

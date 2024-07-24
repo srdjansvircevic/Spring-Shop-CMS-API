@@ -5,7 +5,7 @@ package co.decem.service;
 import java.util.Optional;
 
 import co.decem.model.Order;
-import co.decem.model.OrderDTO;
+import co.decem.model.dto.OrderDTO;
 
 public interface OrderService {
 

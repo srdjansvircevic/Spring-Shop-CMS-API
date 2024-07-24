@@ -1,4 +1,4 @@
-package co.decem.model;
+package co.decem.model.dto;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

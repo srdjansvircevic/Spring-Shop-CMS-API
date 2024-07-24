@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import co.decem.model.Cart;
-import co.decem.model.CartDTO;
+import co.decem.model.dto.CartDTO;
 import co.decem.service.CartService;
 
 
