@@ -1,6 +1,8 @@
-package co.decem.model;
+package co.decem.model.dto;
 
 import java.util.List;
+
+import co.decem.model.PaymentMethod;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;

@@ -9,7 +9,7 @@ import co.decem.dao.CategoryRepository;
 import co.decem.dao.FeaturedProductRepository;
 import co.decem.model.Category;
 import co.decem.model.FeaturedProduct;
-import co.decem.model.HomepageDTO;
+import co.decem.model.dto.HomepageDTO;
 import co.decem.service.HomeService;
 
 @Service

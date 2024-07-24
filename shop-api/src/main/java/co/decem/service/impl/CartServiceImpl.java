@@ -12,9 +12,9 @@ import co.decem.dao.CartItemRepository;
 import co.decem.dao.CartRepository;
 import co.decem.dao.ProductRepository;
 import co.decem.model.Cart;
-import co.decem.model.CartDTO;
 import co.decem.model.CartItem;
 import co.decem.model.Product;
+import co.decem.model.dto.CartDTO;
 import co.decem.service.CartService;
 
 

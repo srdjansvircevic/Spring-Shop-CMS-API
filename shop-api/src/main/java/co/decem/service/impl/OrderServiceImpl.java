@@ -9,9 +9,9 @@ import co.decem.dao.OrderLineRepository;
 import co.decem.dao.OrderRepository;
 import co.decem.dao.ProductRepository;
 import co.decem.model.Order;
-import co.decem.model.OrderDTO;
 import co.decem.model.OrderLine;
 import co.decem.model.Product;
+import co.decem.model.dto.OrderDTO;
 import co.decem.service.OrderService;
 
 import java.util.List;

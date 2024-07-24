@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import co.decem.model.Order;
-import co.decem.model.OrderDTO;
+import co.decem.model.dto.OrderDTO;
 import co.decem.service.OrderService;
 
 import java.util.Optional;

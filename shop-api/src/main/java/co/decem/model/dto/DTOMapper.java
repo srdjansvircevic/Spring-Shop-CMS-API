@@ -1,9 +1,11 @@
-package co.decem.model;
-
-
+package co.decem.model.dto;
 
 import java.util.List;
 import java.util.stream.Collectors;
+
+import co.decem.model.Order;
+import co.decem.model.OrderLine;
+import co.decem.model.Product;
 
 public class DTOMapper {
 
