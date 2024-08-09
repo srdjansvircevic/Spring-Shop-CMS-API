@@ -1,27 +1,103 @@
-# ShopClientUi
+![81993396-d5142b00-9645-11ea-995f-98342b7d5c8f](https://user-images.githubusercontent.com/7531596/128626297-df86020b-1cdc-43b5-a692-6c4c45534ec1.png)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
+> The Angular starter / boilerplate project to start a new enterprise project.
 
-## Development server
+✅ [Angular 18](https://angular.dev/)  
+✅ [Angular Material](https://material.angular.io/)  
+✅ Unit Testing with [Jest](https://jestjs.io/)  
+✅ End-to-End Testing with [Cypress](https://www.cypress.io/)  
+✅ Internationalization with [Transloco](https://github.com/jsverse/transloco)  
+✅ Auto documentation with [Compodoc](https://compodoc.app/)  
+✅ Provide component examples with [Storybook](https://storybook.js.org/)  
+✅ Analyse your project with [source-map-explorer](https://www.npmjs.com/package/source-map-explorer)  
+✅ [Docker](https://www.docker.com/)  
+✅ [ESLint](https://eslint.org/)  
+✅ [Prettier](https://prettier.io/)  
+✅ [Commit Linting](https://github.com/conventional-changelog/commitlint)  
+✅ [AuditJS](https://www.npmjs.com/package/auditjs) Audit this application using Sonatype OSS Index  
+✅ Auto-generate a CHANGELOG with [auto-changelog](https://github.com/cookpete/auto-changelog)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<hr>
 
-## Code scaffolding
+![Angular18](https://img.shields.io/badge/Angular-18-brightgreen)
+[![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)]()
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=wlucha_angular-starter&metric=alert_status)](https://sonarcloud.io/dashboard?id=wlucha_angular-starter)
+[![Docker Pulls](https://img.shields.io/docker/pulls/wlucha/angular-starter)](https://hub.docker.com/repository/docker/wlucha/angular-starter)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/wlucha/angular-starter)](https://hub.docker.com/repository/docker/wlucha/angular-starter)
+[![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/wlucha/angular-starter)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Deploy
 
-## Build
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Demo
 
-## Running unit tests
+[![StackBlitz Demo](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/wlucha/angular-starter)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Install / Development
 
-## Running end-to-end tests
+```bash
+# Clone the project
+$ git clone https://github.com/wlucha/angular-starter
+$ cd angular-starter
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Install dependencies
+$ npm install
 
-## Further help
+# Start server
+$ npm run start
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# Open in browser: http://localhost:4200
+```
+
+## Docker Deployment
+
+```bash
+# Build Docker image
+$ docker build . -t angular-starter
+
+# Run Docker Container
+$ docker run -p 3000:80 angular-starter
+```
+
+## Docker Hub
+
+https://hub.docker.com/r/wlucha/angular-starter
+
+## Commands
+
+- `npm run start` - Start the app
+- `npm run lint` - Lint the project
+- `npm run test` - Run unit tests
+- `npm run build` - Build the project
+- `npm run build:prod` - Build the project in production mode
+- `npm run build:prod:stats` - Build the project in product mode with stats
+- `npm run analyse` - Analyse bundle with [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
+- `npm run compodoc` - Generate [compodoc](https://github.com/compodoc/compodoc) documentation
+- `npm run version` - Generate changelog
+- `npm run prettier` - Format the whole project
+- `npm run audit` - Audit this application using Sonatype OSS Index
+
+## License
+
+MIT License
+
+Copyright (c) 2024 Wilfried Lucha
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
