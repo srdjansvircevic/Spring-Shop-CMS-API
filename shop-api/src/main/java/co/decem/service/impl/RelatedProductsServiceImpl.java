@@ -41,7 +41,8 @@ public class RelatedProductsServiceImpl implements RelatedProductsService{
     @Override
     public List<Product> getRelatedProducts(Long id) {
 
-        RelatedProduct relatedProduct = relatedProductRepository.findByProductId(id);
+        Product product = productRepository.findById(id).orElse(null);
+        RelatedProduct relatedProduct = relatedProductRepository.findByProductId(product);
 
         return relatedProduct.getRelatedProducts();
 
