@@ -1,0 +1,22 @@
+@if (productId) {
+    <h2>Hello the product id Is {{productId }}</h2>
+    }
+
+    @else {
+    <h2>No product id</h2>
+
+    }
+@if(loading){
+    <div>Loading...</div>
+}
+@if(error){
+    <h1>{{ error }}</h1>
+}
+@if(product){
+    <div>
+        <h1>Product ID: {{ product.id }}</h1>
+        <p>Name: {{ product.name }}</p>
+        <p>Description: {{ product.description }}</p>
+        <p>Price: {{ product.price | currency }}</p>
+    </div>
+}

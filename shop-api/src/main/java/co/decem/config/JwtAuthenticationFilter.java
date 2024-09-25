@@ -36,6 +36,16 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
+
+        if ("OPTIONS".equalsIgnoreCase(req.getMethod())) {
+            res.setHeader("Access-Control-Allow-Origin", "*");
+            res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+            res.setHeader("Access-Control-Allow-Headers", "Authorization, Content-Type, X-Requested-With, Accept");
+            res.setHeader("Access-Control-Max-Age", "3600");
+            res.setStatus(HttpServletResponse.SC_OK);
+            return;
+        }
+        
         String header = req.getHeader(HEADER_STRING);
         String username = null;
         String authToken = null;

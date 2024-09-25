@@ -1,6 +1,7 @@
 package co.decem.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,7 @@ import co.decem.service.ProductService;
 
 @RestController
 @RequestMapping("/api/pages/single-product-page")
+@CrossOrigin()
 public class SingleProductController {
 
     @Autowired

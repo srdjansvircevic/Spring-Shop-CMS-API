@@ -31,15 +31,17 @@ public class WebSecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http, JwtAuthenticationFilter jwtAuthenticationFilter, UnauthorizedEntryPoint unauthorizedEntryPoint) throws Exception {
-        http.cors().and().csrf().disable()
+        http.cors().and()
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/users/authenticate", "/users/register", "/index.html", "/chat**", "/chat/info**", "/v3/api-docs/**", "/api-docs/**", "/swagger-ui/**", "/swagger-ui.html", "/webjars/**").permitAll()
+                        .requestMatchers("/users/authenticate", "/users/register", "/index.html", "/chat**", "/chat/info**", "/v3/api-docs/**", "/api-docs/**", "/swagger-ui/**", "/swagger-ui.html", "/webjars/**", "/api/products/test").permitAll()
                         .anyRequest().authenticated()
                 )
                 .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedEntryPoint))
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
         http.addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
+
+        http.csrf().disable();
 
         return http.build();
     }

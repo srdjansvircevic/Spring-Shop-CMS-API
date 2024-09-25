@@ -9,6 +9,9 @@ services:
       - "8080:8080"
     depends_on:
       - appdb
+      - redis
+      - mongo
+      - elasticsearch
 
   appdb:
     image: "postgres:15"
@@ -20,3 +23,39 @@ services:
       - POSTGRES_DB=spring_shop2
     volumes:
       - ./appdb-data:/var/lib/postgresql/data
+
+  redis:
+    image: "redis:7"
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./redis-data:/data
+
+  mongo:
+    image: "mongo:6"
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=rootpassword
+    volumes:
+      - ./mongo-data:/data/db
+
+  elasticsearch:
+    image: "docker.elastic.co/elasticsearch/elasticsearch:8.9.0"
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    ports:
+      - "9200:9200"
+    volumes:
+      - ./elastic-data:/usr/share/elasticsearch/data
+
+  shop-cms:
+    build:
+      context: ../shop-cms
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    depends_on:
+      - appdb

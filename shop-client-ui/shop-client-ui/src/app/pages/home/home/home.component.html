@@ -1,0 +1,25 @@
+@if(homeData){
+    <h2>Featured Products</h2>
+    <ul> 
+        @for (featuredProduct of homeData.featuredProducts; track featuredProduct.id){
+       <li >
+            {{ featuredProduct.product.name }} - {{ featuredProduct.product.price }}
+       </li>
+    }
+    </ul> 
+    <h2>Categories</h2>
+    <ul> 
+        @for (category of homeData.categories; track category.id){
+        <li>
+             {{ category.name }}
+        </li>
+      }
+     </ul> 
+}
+
+@if(loading){
+    <div>Loading...</div>
+}
+@if(error){
+    <h1>{{ error }}</h1>
+}
