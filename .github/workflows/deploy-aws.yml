@@ -37,6 +37,12 @@ jobs:
           curl -sL https://sentry.io/get-cli/ | bash
           sentry-cli login --auth-token=${{ secrets.SENTRY_AUTH_TOKEN }}
 
+      # Switch to the specified Git tag from the input
+      - name: Switch to the specified Git tag
+        run: |
+          git fetch --tags  # Fetch all tags
+          git checkout tags/${{ github.event.inputs.tag_name }}
+
       # Use the Git tag from manual input
       - name: Use tag input
         run: echo "GIT_TAG=${{ github.event.inputs.tag_name }}" >> $GITHUB_ENV
