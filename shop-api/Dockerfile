@@ -17,6 +17,13 @@ RUN chmod +x ./mvnw
 # Build the project, skipping tests
 RUN ./mvnw clean install -Dmaven.test.skip
 
+# Install Sentry CLI (optional depending on your use case)
+RUN curl -sL https://sentry.io/get-cli/ | bash
+
+# Authenticate Sentry CLI (this step may require an environment variable or secret key during the build process)
+ARG SENTRY_AUTH_TOKEN
+RUN sentry-cli login --auth-token=$SENTRY_AUTH_TOKEN
+
 # Stage 2: Create a minimal runtime image
 FROM eclipse-temurin:21-ubi9-minimal
 

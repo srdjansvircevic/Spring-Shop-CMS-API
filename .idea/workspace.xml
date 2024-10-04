@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b23b5753-2528-430e-972b-11e87a279cb6" name="Changes" comment="Add sentryIO tracking&#10;Add scheduled job for cache rebuild&#10;Use cache data instead of querying db for homepage data&#10;Dockerize cms api&#10;Update docker compose&#10;Add entity pages in client">
+      <change beforePath="$PROJECT_DIR$/shop-api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/Dockerfile" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Dockerfile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/opt/homebrew/Cellar/php/8.3.3_1/bin/php" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2mFJ1hI1nixzNFDlmL8VkVfA9tn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ShopAPIApplication.executor": "Run",
+    "git-widget-placeholder": "0.1",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "ts.external.directory.path": "/Users/srdjansvircevic/Desktop/Decem/Java/Vezbe/monorepo/shop-client-ui/shop-client-ui/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.ShopAPIApplication">
+    <configuration name="MongoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="mongo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.decem.mongo.MongoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopAPIApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="SENTRY_AUTH_TOKEN" value="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" />
+      </envs>
+      <module name="decem" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.decem.ShopAPIApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.MongoApplication" />
+      <item itemvalue="Spring Boot.ShopAPIApplication" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b23b5753-2528-430e-972b-11e87a279cb6" name="Changes" comment="" />
+      <created>1726666179274</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726666179274</updated>
+      <workItem from="1726666180810" duration="3117000" />
+      <workItem from="1726669334632" duration="18000" />
+      <workItem from="1726840266070" duration="1340000" />
+      <workItem from="1727195178668" duration="1159000" />
+      <workItem from="1727196343085" duration="1916000" />
+      <workItem from="1727261930322" duration="888000" />
+      <workItem from="1727270050465" duration="3620000" />
+      <workItem from="1728060462482" duration="91000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add sentryIO tracking&#10;Add scheduled job for cache rebuild&#10;Use cache data instead of querying db for homepage data&#10;Dockerize cms api&#10;Update docker compose&#10;Add entity pages in client">
+      <option name="closed" value="true" />
+      <created>1727273623018</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727273623018</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add sentryIO tracking&#10;Add scheduled job for cache rebuild&#10;Use cache data instead of querying db for homepage data&#10;Dockerize cms api&#10;Update docker compose&#10;Add entity pages in client" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add sentryIO tracking&#10;Add scheduled job for cache rebuild&#10;Use cache data instead of querying db for homepage data&#10;Dockerize cms api&#10;Update docker compose&#10;Add entity pages in client" />
+  </component>
+</project>
